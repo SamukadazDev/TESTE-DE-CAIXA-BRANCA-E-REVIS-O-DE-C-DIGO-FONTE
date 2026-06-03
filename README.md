@@ -1,7 +1,7 @@
 # Relatório Técnico - Teste de Caixa Branca e Revisão de Código
 
 ## Introdução
-Esta atividade tem como objetivo aplicar os conceitos de Teste de Caixa Branca, revisão estática e análise de fluxo de execução em um código-fonte Java legado. O sistema analisado consiste em um módulo de autenticação simples que se conecta a um banco de dados MySQL para validar credenciais de usuários. A análise buscou identificar falhas estruturais, vulnerabilidades de segurança e propor melhorias baseadas em boas práticas de Engenharia de Software.
+Este repositório foi criado para a entrega da atividade individual da disciplina do Daniel Ohata de UX-UI, focado em aplicar Teste de Caixa Branca e revisar um código legado em Java.
 
 ## Análise Estática do Código
 Durante a inspeção do arquivo original (`User.java`), foram identificadas diversas não conformidades críticas, detalhadas na planilha de Plano de Testes. Os principais problemas incluem:
@@ -47,4 +47,4 @@ Na refatoração (classe `AutenticacaoService.java`), as seguintes melhorias for
 * Adição de tratamento adequado no `catch` lançando o erro via `System.err.println` e `e.printStackTrace()`.
 
 ## Conclusão
-A realização desta atividade evidenciou a importância do teste estrutural (Caixa Branca) aliado à revisão por pares (análise estática). O código original, embora pudesse compilar e "funcionar" em um cenário ideal, era estruturalmente frágil e perigoso para um ambiente de produção. O maior desafio do processo de refatoração foi garantir que as regras de negócio fossem mantidas intactas enquanto a segurança estrutural era adicionada. A aplicação da complexidade ciclomática provou ser uma ferramenta analítica excelente para prever cenários de teste necessários, garantindo que nenhuma linha crítica do fluxo ou exceção fique sem cobertura, elevando consideravelmente a qualidade do software entregue.
+Com essa atividade, deu para ver na prática como um código que parece funcionar pode estar cheio de falhas de segurança (como SQL Injection) e vazamento de memória. O uso do grafo e do cálculo de complexidade ajudou a mapear todos os testes necessários.
