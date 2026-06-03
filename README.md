@@ -14,8 +14,7 @@ Durante a inspeção do arquivo original (`User.java`), foram identificadas dive
 ## Grafo de Fluxo
 Abaixo está a representação estrutural do método `verificarUsuario`, mapeando os caminhos lógicos e pontos de decisão do código original.
 
-![Grafo de Fluxo do Método](<img width="444" height="744" alt="Grafo" src="https://github.com/user-attachments/assets/2d9dac0c-213d-464f-b197-82c41909e8a6" />
-)
+![Grafo de Fluxo do Método](Grafo.png)
 
 ## Complexidade Ciclomática
 Para determinar a quantidade de caminhos independentes e a base para os casos de teste, aplicou-se a fórmula da Complexidade Ciclomática:
